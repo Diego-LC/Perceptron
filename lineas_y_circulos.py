@@ -733,6 +733,11 @@ for i in range(len(lineas)):
         if lineas[i] == lineas[j]:
             print(f"Los ejemplos de lineas {i+1} y {j+1} son iguales")
 
+for i in range(len(circulos)):
+    for j in range(i+1, len(circulos)):
+        if circulos[i] == circulos[j]:
+            print(f"Los ejemplos de circulos {i+31} y {j+31} son iguales")
+
 print("Ejemplos de líneas:")
 for i, linea in enumerate(lineas):
     print(f"Ejemplo {i+1}:")

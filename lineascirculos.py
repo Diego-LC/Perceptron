@@ -64,12 +64,13 @@ for i, circulo in enumerate(circulos):
     print()
 
 # Comprobar si hay ejemplos repetidos
-
 print("Ejemplos repetidos:\n")
-for i in range(30):
-    if lineas[i] in lineas:
-        print(f"Ejemplo {i+1} de línea está repetido")
+for i in range(len(lineas)):
+    for j in range(i+1, len(lineas)):
+        if lineas[i] == lineas[j]:
+            print(f"Los ejemplos de lineas {i+1} y {j+1} son iguales")
 
-for i in range(30):
-    if circulos[i] in circulos:
-        print(f"Ejemplo {i+31} de círculo está repetido")
+for i in range(len(circulos)):
+    for j in range(i+1, len(circulos)):
+        if circulos[i] == circulos[j]:
+            print(f"Los ejemplos de circulos {i+31} y {j+31} son iguales")
