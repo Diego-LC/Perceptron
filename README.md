@@ -12,7 +12,6 @@ Este proyecto implementa un perceptrón para clasificar imágenes de 10x10 píxe
 ## Requisitos
 
 - Python 3.x
-- NumPy
 
 ## Instalación
 
@@ -56,7 +55,9 @@ python perceptron.py
 ```sh
 Ejemplo 1 (B): Esperado=1, Predicción=1
 Ejemplo 2 (M): Esperado=1, Predicción=2
+
 ...
+
 Correctos: 46, Incorrectos: 14, Sin clasificar: 0
 Precisión del modelo: 76.66666666666667%
 ```
